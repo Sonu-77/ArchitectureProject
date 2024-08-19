@@ -1,0 +1,28 @@
+{
+    "name": "ArchitectureProject Environment",
+    "settings": {
+      "workbench.colorTheme": "ice tea Theme"
+    },
+    "extensions": [
+        "ms-vscode.live-server",
+    "ritwickdey.live-sass",
+    "christian-kohler.npm-intellisense",
+    "sergeyegorov.foldercolorizer",
+    "sidthesloth.html5-boilerplate",
+    "ecmel.vscode-html-css",
+    "MohamedAkram.vscode-html-format",
+    "ashhitch.html-snippets",
+    "souravsharma.ice-tea-theme",
+    "visualstudioexptteam.vscodeintellicode",
+    "visualstudioexptteam.intellicode-api-usage-examples",
+    "dsznajder.es7-react-js-snippets",
+    "ms-vscode-remote.remote-wsl",
+    "stylelint.vscode-stylelint",
+    "bradlc.vscode-tailwindcss",
+    "NilsWerner.vscode-autoDocstring",
+    "Prettier-Formatter.vscode",
+    "wayou.vscode-icons-mac"
+    ],
+  "postCreateCommand": "npm install",
+  "remoteUser": "vscode"
+}

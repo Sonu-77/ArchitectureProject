@@ -1,31 +1,44 @@
+// For format details, see https://aka.ms/devcontainer.json. For config options, see the
+// README at: https://github.com/devcontainers/templates/tree/main/src/javascript-node
 {
-    "name": "ArchitectureProject Environment",
-    "settings": {
-      "workbench.colorTheme": "ice tea Theme"
-    },
-    "extensions": [
-        "ms-vscode.live-server",
-        "ritwickdey.live-sass",
-        "christian-kohler.npm-intellisense",
-        "sergeyegorov.foldercolorizer",
-        "sidthesloth.html5-boilerplate",
-        "ecmel.vscode-html-css",
-        "MohamedAkram.vscode-html-format",
-        "ashhitch.html-snippets",
-        "souravsharma.ice-tea-theme",
-        "visualstudioexptteam.vscodeintellicode",
-        "visualstudioexptteam.intellicode-api-usage-examples",
-        "dsznajder.es7-react-js-snippets",
-        "ms-vscode-remote.remote-wsl",
-        "stylelint.vscode-stylelint",
-        "bradlc.vscode-tailwindcss",
-        "NilsWerner.vscode-autoDocstring",
-        "Prettier-Formatter.vscode",
-        "wayou.vscode-icons-mac",
-        "mohd-akram.vscode-html-format",
-        "SouravSharma.ice-tea",
-        "esbenp.prettier-vscode"
-    ],
-  "postCreateCommand": "npm install",
-  "remoteUser": "vscode"
+	"name": "Node.js",
+	// Or use a Dockerfile or Docker Compose file. More info: https://containers.dev/guide/dockerfile
+	"image": "mcr.microsoft.com/devcontainers/javascript-node:1-22-bookworm",
+	"features": {
+		"ghcr.io/bartventer/arch-devcontainer-features/docker-in-docker:1": {
+			"azureDnsAutoDetection": true,
+			"installDockerBuildx": true,
+			"installDockerComposeSwitch": true,
+			"enableDockerAutocompletion": true,
+			"version": "latest",
+			"dockerDashComposeVersion": "v2"
+		}
+	},
+	"customizations": {
+		"vscode": {
+			"extensions": [
+				"dsznajder.es7-react-js-snippets",
+				"SouravSharma.ice-tea",
+				"esbenp.prettier-vscode",
+				"rvest.vs-code-prettier-eslint",
+				"bradlc.vscode-tailwindcss",
+				"ecmel.vscode-html-css"
+			]
+		}
+	}
+
+	// Features to add to the dev container. More info: https://containers.dev/features.
+	// "features": {},
+
+	// Use 'forwardPorts' to make a list of ports inside the container available locally.
+	// "forwardPorts": [],
+
+	// Use 'postCreateCommand' to run commands after the container is created.
+	// "postCreateCommand": "yarn install",
+
+	// Configure tool-specific properties.
+	// "customizations": {},
+
+	// Uncomment to connect as root instead. More info: https://aka.ms/dev-containers-non-root.
+	// "remoteUser": "root"
 }

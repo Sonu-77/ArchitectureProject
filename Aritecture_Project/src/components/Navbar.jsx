@@ -2,7 +2,7 @@ import React from 'react'
 import { FaSearch } from "react-icons/fa";
 
 
-export default function Navbar() {
+function Navbar() {
   return (
     <div className='w-full flex justify-around items-center  gap-[15vw] p-[1vw] '>
       <div className=' '>
@@ -25,3 +25,5 @@ export default function Navbar() {
     </div>
   )
 }
+
+export default  Navbar;
